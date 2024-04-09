@@ -1,0 +1,28 @@
+/* customSlider.css */
+.slider-container {
+  position: relative;
+  width: 300px; /* 根据你的需求设置宽度 */
+  height: 300px; /* 根据你的需求设置高度 */
+  overflow: hidden;
+  transform: rotate(-45deg); /* 将整个轮播容器倾斜45度 */
+  margin: 0 auto; /* 设置左右外边距为auto，使轮播容器水平居中 */
+}
+
+.slick-list {
+  display: flex;
+  flex-direction: column;
+  transform: rotate(45deg); /* 将轮播列表反向倾斜45度，与轮播容器相反 */
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-container img {
+  width: 100%; /* 让图片填充整个容器 */
+  height: 100%; /* 让图片填充整个容器 */
+  object-fit: cover; /* 避免图片被裁切 */
+  transform: rotate(45deg);
+}
